@@ -1,0 +1,20 @@
+{
+  "movie_count": 2000,
+  "html_count": 2239,
+  "category_counts": {
+    "精选电视剧": 162,
+    "热播电影": 388,
+    "综艺娱乐": 16,
+    "悬疑犯罪": 200,
+    "爱情喜剧": 175,
+    "动作冒险": 120,
+    "科幻奇幻": 100,
+    "动漫少儿": 27,
+    "华语剧集": 266,
+    "日韩专区": 110,
+    "欧美大片": 174,
+    "家庭剧情": 262
+  },
+  "m3u8_source_count": 20,
+  "uses_top_level_images": "1.jpg to 150.jpg referenced; no placeholder image files generated"
+}

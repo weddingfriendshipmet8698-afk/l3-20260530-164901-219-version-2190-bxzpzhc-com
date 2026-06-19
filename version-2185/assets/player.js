@@ -1,0 +1,3 @@
+
+import{H as Hls}from'./hls-vendor-dru42stk.js';
+export function initPlayer(url){const video=document.getElementById('videoPlayer');const overlay=document.querySelector('.play-overlay');if(!video)return;let loaded=false;const load=()=>{if(loaded)return;loaded=true;if(video.canPlayType('application/vnd.apple.mpegurl')){video.src=url}else if(Hls.isSupported()){const hls=new Hls({enableWorker:true,lowLatencyMode:true});hls.loadSource(url);hls.attachMedia(video)}else{video.src=url}};const start=()=>{load();overlay&&overlay.classList.add('is-hidden');video.setAttribute('controls','controls');video.play().catch(()=>{})};overlay&&overlay.addEventListener('click',start);video.addEventListener('click',()=>{if(!loaded)start()})}
